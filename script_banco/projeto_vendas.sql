@@ -73,4 +73,4 @@ CREATE TABLE items_compras(
 );
 
 /*Adicioando administrador ao sistema, a email admin@email.com senha de acesso é 53892 */
-INSERT INTO administradores (nome, email, senha, cpf) VALUES ('Admin', 'admin@email.com', '$2a$10$egrUdh4EsBABvC1y2A/NFO3UXyOKgeajFXGYrJLZRZg..8u.DmZbO', '123.654.321-34');
+INSERT INTO administradores (nome, email, senha, cpf) VALUES ('Admin', 'admin@email.com', '$2a$10$egrUdh4EsBABvC1y2A/NFO3UXyOKgeajFXGYrJLZRZg..8u.DmZbO', '000.000.000-00');
