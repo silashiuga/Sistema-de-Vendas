@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Projeto Vendas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <script src="../scripts/productForm.js" type="module"></script>
+  </head>
+
+  <body id="#productForm">
+
+    <nav class="menu">
+      <p class="brand">Sales System</p>
+      <ul>
+        <li><a class="items-menu" href="../Pages/product.html">Produtos</a></li>
+        <li><a class="items-menu" href="../Pages/category.html">Categorias</a></li>
+        <li><a class="items-menu" href="../Pages/sale.html">Vendas</a></li>
+        <li><a class="items-menu" href="../Pages/client.html">Clientes</a></li>
+        <li><a class="items-menu conta">Conta</a></li>
+        <li><a class="items-menu logout" href="#">Sair</a></li>
+      </ul>
+    </nav>
+    <div class="message-container"></div>
+    <div class="container">
+      <h1 id="title-form"></h1>
+      <form class="product">
+        <div class="container-name-input">
+          <label for="nameInput">Nome</label>
+          <input type="text" name="name" id="nameInput">
+        </div>
+        <div id="selectCategory" class="container-category-select">
+          <label>Categorias</label>
+          
+        </div>
+        <div class="container-description-input">
+          <label for="descriptionInput">Descrição</label>
+          <textarea type="mult" name="description" id="descriptionInput" rows="10"> </textarea>
+        </div>
+        <div>
+          <div class="container-price-input">
+            <label for="priceInput">Preço</label>
+            <input type="number" name="price" id="priceInput">
+          </div>
+  
+          <div class="container-amount-input">
+            <label for="amountInput">Estoque</label>
+            <input type="number" name="amount" id="amountInput">
+          </div>
+        </div>
+
+        <div class="container-status-input">
+          <label>Status</label>
+          <div class="radio">
+            <input type="radio" id="activeInput" name="status" checked/>
+            <label for="activeInput">Ativo</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="inactiveInput" name="status" />
+            <label for="inactiveInput">Inativo</label>
+          </div>
+        </div>
+      </form>
+      <section class="button-container-create">
+        <button class="btn-create">SALVAR</button>
+        <button class="btn-cancel">CANCELAR</button>
+      </section>
+      <section class="button-container-edit">
+        <button class="btn-update">ATUALIZAR</button>
+        <button class="btn-cancel-update">CANCELAR</button>
+        <button class="btn-delete">DELETAR</button>
+      </section>
+    </div>
+
+  </body>
+</html>

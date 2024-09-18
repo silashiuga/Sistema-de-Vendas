@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Projeto Vendas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/page.css">
+    <link rel="stylesheet" href="../styles/sale.css">
+    <script src="../scripts/sale.js" type="module"></script>
+  </head>
+
+  <body>
+
+    <nav class="menu">
+      <p class="brand">Sales System</p>
+      <ul>
+        <li><a class="items-menu" href="../Pages/product.html">Produtos</a></li>
+        <li><a class="items-menu" href="../Pages/category.html">Categorias</a></li>
+        <li><a class="items-menu" href="../Pages/sale.html">Vendas</a></li>
+        <li><a class="items-menu" href="../Pages/client.html">Clientes</a></li>
+        <li><a class="items-menu conta">Conta</a></li>
+        <li><a class="items-menu logout" href="#">Sair</a></li>
+      </ul>
+    </nav>
+    <div class="message-container">
+     
+    </div>
+    <section class="container-search-add">
+      <div>
+        <h1 class="title-page">Vendas</h1>
+        <form class="search-form">
+          <input type=text placeholder="CPF do cliente ou vendedor" class="search-input">
+          <button id="btn-search"><img src="../assets/icons/search.svg"></button>
+        </form>
+      </div>
+      <a href="../Pages/purchase.html" class="add-btn">NOVA VENDA</a>
+    </section>
+      <section id="search-result" class="">
+        <div id="btn-close-result"><img src="../assets/icons/close.svg"></div>
+      </section>
+    <section class="list-container">
+      <h3 class="title-list">Lista produtos</h3>
+      <section class="filter-list">
+        <form>
+          <div>
+            <p class="filter-title">DATA</p>
+            <select id="filter-date" class="filter">
+              <option value="DESC" autofocus="true">RECENTE</option>
+              <option value="ASC">ANTIGO</option>
+            </select>
+          </div>
+
+          <div>
+            <p class="filter-title">VALOR</p>
+            <select id="filter-value" class="filter">
+              <option value="DESC" selected>MAIOR</option>
+              <option value="ASC">MENOR</option>
+            </select>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <section id="table-container"></section>
+    <section class="modal-items-container ">
+      <div class="items-modal">
+        <div id="btn-close-items"><img src="../assets/icons/close.svg"></div>
+       
+      </div>
+    </section>
+  </body>
+</html>
