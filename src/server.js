@@ -14,7 +14,7 @@ const app = express();
 
 const userController = new UserController();
 const options = {
-  origin:'http://127.0.0.1:5501'
+  origin:'http://127.0.0.1:5500'
 }
 
 app.use(cors(options));
